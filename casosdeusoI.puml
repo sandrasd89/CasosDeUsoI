@@ -1,11 +1,10 @@
 @startuml
 
-:Cliente: as c
+
 left to right direction
 
-c -- (Confirmar pedido)
-c -- (Devolver pedido)
-(Confirmar pedido) ..> (Cancelar pedido): <<include>>
-(Devolver pedido) ..> (Cancelar pedido): <<include>>
+
+(Acceder) <.. (Registrarse): <<extend>>
+
 
 @enduml
