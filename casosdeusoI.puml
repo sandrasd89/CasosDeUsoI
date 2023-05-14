@@ -1,7 +1,7 @@
 @startuml
 
-(Pagar) <|-- (Pagar con tarjeta)
-(Pagar) <|-- (Pagar con transferencia)
-
+:Cliente: -right- (Reservar vuelo)
+:Cliente VIP: -right- (Elegir asientos)
+:Cliente VIP: -up-|> :Cliente:
 
 @enduml
