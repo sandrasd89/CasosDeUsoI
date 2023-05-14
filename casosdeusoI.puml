@@ -1,5 +1,5 @@
 @startuml
 
-:(Mostrar menú):
+:Cliente: -right- (Mostrar menú)
 
 @enduml
