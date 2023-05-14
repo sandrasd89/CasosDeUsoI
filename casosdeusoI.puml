@@ -1,10 +1,7 @@
 @startuml
 
-
-left to right direction
-
-
-(Acceder) <.. (Registrarse): <<extend>>
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
 
 
 @enduml
