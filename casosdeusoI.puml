@@ -1,8 +1,14 @@
 @startuml
 
-:Ciudadano: -right- (Registrar entrada)
-:Ciudadano extranjero: -right- (Tomar huellas)
-:Ciudadano: <|-- :Ciudadano extranjero:
-(Tomar huellas) .up.> (Registrar entrada) : <<extend>>
+usecase UC1 as "Sacar dinero
+--
++ solicitud hecha"
+
+usecase UC2 as "Retener tarjeta"
+
+UC1 <.. UC2 : <<extend>>
+
+note "Description--\n--\ncondicion:\n { historia sospechosa }\npunto de extension:\n solicitud hecha" as N2
+
 
 @enduml
